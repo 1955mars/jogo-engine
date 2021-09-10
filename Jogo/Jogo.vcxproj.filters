@@ -18,6 +18,9 @@
     <ClCompile Include="src\Jogo\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Jogo\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Jogo\Application.h">
@@ -26,10 +29,13 @@
     <ClInclude Include="src\Jogo\Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Jogo.h">
+    <ClInclude Include="src\Jogo\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Jogo\EntryPoint.h">
+    <ClInclude Include="src\Jogo\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Jogo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
