@@ -2,6 +2,7 @@
 bin/
 bin-int/
 
-*/.user
-*/.vcxproj*
-*/.sln
+*.user
+*.vcxproj
+*.vcxproj.filters
+*.sln
