@@ -1,3 +1,6 @@
 [submodule "Jogo/vendor/spdlog"]
 	path = Jogo/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "Jogo/vendor/glfw"]
+	path = Jogo/vendor/glfw
+	url = https://github.com/1955mars/glfw.git

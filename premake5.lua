@@ -10,6 +10,11 @@ workspace "Jogo"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["glfw"] = "Jogo/vendor/glfw/include" 
+
+include "Jogo/vendor/glfw"
+
 project "Jogo"
 	location "Jogo"
 	kind "SharedLib"
@@ -27,7 +32,14 @@ project "Jogo"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.glfw}"
+	}
+
+	links
+	{
+		"glfw",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
